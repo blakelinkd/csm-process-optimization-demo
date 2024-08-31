@@ -1,0 +1,21 @@
+Task ID	Category	Task Description	Estimated Time (hours)	Dependencies	Resources/Tools	Status
+1	Setup	Set up GitHub repository for the project	1		GitHub	Completed
+2	Setup	Configure GitHub Actions for CI/CD	2	1	GitHub Actions	Not Started
+3	ServiceNow	Create custom workflow in ServiceNow for deployment process	3		ServiceNow Developer Instance	Not Started
+4	ServiceNow	Develop script to integrate ServiceNow with GitHub Actions	4	2, 3	ServiceNow, GitHub Actions	Not Started
+5	ServiceNow	Create Business Rules and Script Includes for alert handling	3		ServiceNow Developer Instance	Not Started
+6	Automation	Develop Python script to simulate Prometheus alerts	2		Python	Not Started
+7	Automation	Develop Python script to simulate Elastic Stack alerts	2		Python	Not Started
+8	Integration	Integrate simulated Prometheus alerts with ServiceNow	2	5, 6	ServiceNow, Python	Not Started
+9	Integration	Integrate simulated Elastic Stack alerts with ServiceNow	2	5, 7	ServiceNow, Python	Not Started
+10	Automation	Create Python script to generate sample deployment data	2		Python	Not Started
+11	Automation	Develop script to automate tracking of deployment statuses	3	4	Python, ServiceNow	Not Started
+12	Automation	Implement automatic rollback triggering for failed deployments	4	4, 11	Python, ServiceNow, GitHub Actions	Not Started
+13	Reporting	Develop script to generate detailed deployment reports	3	11	Python, ServiceNow	Not Started
+14	Data Migration	Create sample legacy data for migration	2		Excel or CSV files	Not Started
+15	Data Migration	Set up Import Sets and Transform Maps in ServiceNow	3		ServiceNow Developer Instance	Not Started
+16	Data Migration	Develop script to automate data migration process	4	14, 15	Python, ServiceNow	Not Started
+17	Testing	Develop and run unit tests for all scripts	4	All script tasks	Python, pytest	Not Started
+18	Testing	Perform integration testing of the entire workflow	6	All tasks		Not Started
+19	Documentation	Write project documentation including setup instructions	3	All tasks	Markdown	Not Started
+20	Documentation	Create a demo video showcasing the project functionality	2	All tasks	Screen recording software	Not Started
